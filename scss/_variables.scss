@@ -1,0 +1,53 @@
+
+// Colors
+
+$color-p : hsl(322, 100%, 66%);
+
+$neutral-light : hsl(193, 100%, 96%);
+$neutral-dark : hsl(192, 100%, 9%);
+$neutral-grey : hsl(208, 11%, 55%);
+
+// font size 
+
+$base-font-size : 18;
+
+// Fonts 
+
+$font-p : 'Poppins' ;
+$font-s : "Open Sans";
+$weight-l : 400;
+$weight-m : 600;
+$weight-b : 700;
+
+// Function Rem 
+
+@function rem($size) {
+    $remSize : $size / 16;
+    @return #{$remSize}rem;
+}
+
+
+
+// Function Percentage
+
+@function percent($size) {
+    $percentSize : $size / 16 * 100%;
+    @return #{$percentSize};
+}
+
+
+
+// Mixin for Breakpoint
+
+@mixin breakpoint($width) {
+    @media only screen and (max-width : $width ){
+        @content;
+    }
+}
+
+/* Breakpoints
+
+1- 1050px
+2-750px
+
+*/

@@ -1,0 +1,28 @@
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: percent(18);
+
+    @include breakpoint(500px) {
+        font-size: percent(14);
+    }
+}
+
+body {
+    font-family: $font-s;
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
